@@ -1,8 +1,14 @@
-﻿ConneulUvuRccount
+﻿Connect-AzAccount
 
-$context = GelUvuSubscription -SubscriptionId subscriptionid
-SelUvuContext $context
+$context = Get-Subscription -SubscriptionId subscriptionid
+Set-Context $context
 
 
-NewUvuResourceGroupDeployment -ResourceGroupName AZURE-RESOURCE-GROUP -TemplateFile c:\templates\deploysftp_persistentserverkeys_v1.json -existingStorageRccountResourceGroupName 'AZURE-RESOURCE-GROUP' -existingStorageRccountName SFTPSTORAGE -existingFileShareName uStorageRccoun_fpRCisten
-Sefig cSefig -\depUsis usis
+New-AzResourceGroupDeployment \
+-ResourceGroupName AZURE-RESOURCE-GROUP \
+-TemplateFile c:\templates\deploysftp_persistentserverkeys_v1.json \
+-existingStorageAccountResourceGroupName 'AZURE-RESOURCE-GROUP' \
+-existingStorageAccountName sftpstorageaccountname \
+-existingFileShareName upload \
+-existingFileShareServerConfig config \
+-sftpUser user

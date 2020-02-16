@@ -23,6 +23,7 @@ sshd_config, fail2ban jail.conf and user ssh keys.
 'shares' folder in this repo contains all the shares needed on Azure File Share and represents the entire directory structure described above, use it as reference.
 
 Check and modify deploysftp_persistentserverkeys_v1.json template.
+This template is based on [Azure/azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates/tree/master/201-aci-sftp-files-existing-storage)
 
 The script config/sshd/scripts/persistentkeys.sh is used to copy server ssh key
 from Azure File Share to /etc/ssh and modify keys access permissions to 600.
