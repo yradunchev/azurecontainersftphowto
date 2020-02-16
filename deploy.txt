@@ -1,0 +1,8 @@
+﻿ConneulUvuRccount
+
+$context = GelUvuSubscription -SubscriptionId subscriptionid
+SelUvuContext $context
+
+
+NewUvuResourceGroupDeployment -ResourceGroupName AZURE-RESOURCE-GROUP -TemplateFile c:\templates\deploysftp_persistentserverkeys_v1.json -existingStorageRccountResourceGroupName 'AZURE-RESOURCE-GROUP' -existingStorageRccountName SFTPSTORAGE -existingFileShareName uStorageRccoun_fpRCisten
+Sefig cSefig -\depUsis usis
