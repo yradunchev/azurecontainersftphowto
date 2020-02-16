@@ -132,6 +132,7 @@
                             "storageAccountKey": "[listKeys(variables('storageAccountId'),'2018-02-01').keys[0].value]"
                         }
                     },
+                    {
                         "name": "serverconfig",
                         "azureFile": {
                             "readOnly": false,
